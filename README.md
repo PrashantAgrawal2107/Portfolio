@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prashant Agrawal — Portfolio
 
-## Getting Started
+A 3D, animation-driven portfolio built with Next.js, React Three Fiber, and Framer Motion. Instead of just describing the agentic AI work done at Argusoft, the site includes live, interactive re-creations of it:
 
-First, run the development server:
+- **Live PII/PHI masking** — type text and watch sensitive fields get detected and redacted in real time.
+- **Agentic reasoning trace** — press play to watch a planner loop think, act, self-check, and escalate.
+- **RAG + NL-to-SQL pipeline** — an animated flow diagram showing routing, retrieval, and reconciliation.
+- **LangGraph workflow builder** — watch an agent "design" a workflow graph node-by-node.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Stack
+
+Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Framer Motion · React Three Fiber / drei / postprocessing · lucide-react
+
+## Project structure
+
+```
+src/
+  app/                  # routes, layout, metadata, generated favicon (icon.tsx)
+  components/
+    layout/              Navbar, Footer
+    three/                3D hero background (NeuralField, HeroScene)
+    ui/                   Reveal (scroll-in animation), SectionHeading, Badge
+    demos/                The 4 interactive demos + shared DemoCard chrome
+    sections/             Hero, About, Experience, Work, OtherProjects, Skills, Contact
+    icons/                Inline GitHub/LinkedIn brand SVGs (lucide-react dropped these)
+  lib/
+    content.ts            *** All editable copy lives here: name, links, experience,
+                           project descriptions, skills, education ***
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Before you deploy — things to fill in
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Everything you need to change is in **`src/lib/content.ts`**, plus two things below it:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **`profile.links`** — swap the placeholder `github` / `linkedin` / `leetcode` URLs for your real profile URLs.
+2. **`public/resume.pdf`** — already contains your resume; replace this file if you update your resume.
+3. **Project codenames** — `PDS` and `Zvaluate` (real, confidential Argusoft client projects) are presented here as **"Project Aegis"** and **"Project Compass"** with a visible confidentiality note, per your call on how to handle NDA-sensitive project names. Rename/adjust in `flagshipProjects` in `content.ts` if you'd rather use the real names or word it differently.
+4. **`metadataBase`** in `src/app/layout.tsx` — currently a placeholder (`https://your-portfolio.vercel.app`); update it to your real Vercel URL once you have one, for correct Open Graph/social preview links.
 
-## Learn More
+## Run locally
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy to Vercel
 
-## Deploy on Vercel
+This is a stock Next.js app — zero configuration needed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repo to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new), import the repo.
+3. Framework preset "Next.js" is auto-detected. Click **Deploy**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Every subsequent push to your main branch redeploys automatically.
