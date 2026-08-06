@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-portfolio.vercel.app"),
+  metadataBase: new URL("https://portfolio-ten-henna-20.vercel.app"),
   title: "Prashant Agrawal — Agentic AI & Full-Stack Engineer",
   description:
     "Software Engineer building agentic AI systems, LangGraph-orchestrated workflows, RAG pipelines, and full-stack platforms.",

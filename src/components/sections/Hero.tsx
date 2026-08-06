@@ -11,7 +11,7 @@ const HeroScene = dynamic(() => import("@/components/three/HeroScene").then((m) 
   ssr: false,
 });
 
-const ROTATING_WORDS = ["Agentic AI Agents", "LangGraph Workflows", "RAG Pipelines", "NL-to-SQL", "FastAPI Backends"];
+const ROTATING_WORDS = ["Truly Agentic AI Agents", "LangGraph Workflows", "RAG Pipelines", "NL-to-SQL", "FastAPI Backends"];
 
 export function Hero() {
   const [wordIndex, setWordIndex] = useState(0);

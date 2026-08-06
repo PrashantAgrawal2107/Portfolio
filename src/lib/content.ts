@@ -3,7 +3,7 @@ export const profile = {
   role: "Software Engineer",
   tagline: "Agentic AI Systems · LangGraph · RAG Pipelines · FastAPI",
   summary:
-    "Software Engineer building agentic AI systems, RAG pipelines, and full-stack backend platforms at Argusoft Pvt Ltd. I design autonomous multi-step reasoning agents, LangGraph-orchestrated workflows, and NL-to-SQL pipelines for compliance-sensitive data — backed by a strong full-stack foundation in MERN, Nest.js, FastAPI, PostgreSQL and MongoDB.",
+    "Software Engineer building agentic AI systems, RAG pipelines, and full-stack backend platforms. I design autonomous multi-step reasoning agents, LangGraph-orchestrated workflows, and NL-to-SQL pipelines for compliance-sensitive data — backed by a strong full-stack foundation in MERN, Nest.js, FastAPI, PostgreSQL and MongoDB.",
   location: "Gandhinagar, India",
   email: "prashantagrawal2107@gmail.com",
   links: {
@@ -16,9 +16,9 @@ export const profile = {
 
 export const stats = [
   { label: "Years building AI systems", value: "1.5+" },
-  { label: "Agentic pipeline phases shipped", value: "9" },
-  { label: "Core stack", value: "LangGraph · RAG · FastAPI" },
-  { label: "Domains", value: "HealthTech · Workflow AI" },
+  { label: "Flagship agentic platforms shipped", value: "2" },
+  { label: "Core stack", value: "Full-Stack + Agentic AI" },
+  { label: "Focus", value: "LangGraph · RAG · FastAPI" },
 ];
 
 export type Experience = {
@@ -151,25 +151,25 @@ export const otherProjects: SimpleProject[] = [
     tech: ["LangGraph", "LangChain", "Python"],
   },
   {
-    name: "Checklist Workflow Automation",
-    tag: "Java Spring Boot",
+    name: "Checkmate",
+    tag: "Full-Stack · Java Spring Boot",
     description:
-      "A checklist and workflow-automation platform: RESTful APIs for checklist creation, task assignment, and role-based execution, with JPA/PostgreSQL modeling for teams, reminders, dependencies, and audit logging.",
+      "A full-stack platform for building and running checklists for recurring workflows like employee onboarding and offboarding. I worked on the backend in Java Spring Boot: RESTful APIs for checklist creation, task assignment, and role-based execution, with JPA/PostgreSQL modeling for teams, reminders, dependencies, and audit logging.",
     tech: ["Java", "Spring Boot", "JPA", "PostgreSQL"],
   },
   {
     name: "Real Estate App",
-    tag: "MERN Stack · College Project",
+    tag: "MERN Stack",
     description:
-      "A MERN-based real estate application for securely listing, browsing, and connecting around property listings, with JWT authentication for account management. Built during college while learning the MERN stack.",
+      "A MERN-based real estate application for securely listing, browsing, and connecting around property listings, with JWT authentication for account management.",
     tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
     link: "https://github.com/PrashantAgrawal2107/MERN-Estate-App",
   },
   {
     name: "Blog App",
-    tag: "MERN Stack · College Project",
+    tag: "MERN Stack",
     description:
-      "A MERN-based blogging platform for creating and managing posts, with public read access and protected content management. Built during college while learning the MERN stack.",
+      "A MERN-based blogging platform for creating and managing posts, with public read access and protected content management.",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     link: "https://github.com/PrashantAgrawal2107/MERN-Blog-App",
   },
