@@ -137,25 +137,12 @@ export type SimpleProject = {
 
 export const otherProjects: SimpleProject[] = [
   {
-    name: "E-Learning Platform",
-    tag: "Full-Stack · FastAPI",
+    name: "Blog App",
+    tag: "MERN Stack",
     description:
-      "A full-stack e-learning platform with course/module management, an automated-scoring quiz system, enrollments, and progress tracking.",
-    tech: ["FastAPI", "PostgreSQL", "React", "JWT"],
-  },
-  {
-    name: "LangGraph Workflow Migration",
-    tag: "AI Orchestration",
-    description:
-      "Restructured an existing LangChain project onto LangGraph, improving orchestration clarity and modular flow design.",
-    tech: ["LangGraph", "LangChain", "Python"],
-  },
-  {
-    name: "Checkmate",
-    tag: "Full-Stack · Java Spring Boot",
-    description:
-      "A full-stack platform for building and running checklists for recurring workflows like employee onboarding and offboarding. I worked on the backend in Java Spring Boot: RESTful APIs for checklist creation, task assignment, and role-based execution, with JPA/PostgreSQL modeling for teams, reminders, dependencies, and audit logging.",
-    tech: ["Java", "Spring Boot", "JPA", "PostgreSQL"],
+      "A MERN-based blogging platform for creating and managing posts, with public read access and protected content management.",
+    tech: ["MongoDB", "Express", "React", "Node.js"],
+    link: "https://mern-blog-app-pk.onrender.com",
   },
   {
     name: "Real Estate App",
@@ -163,15 +150,21 @@ export const otherProjects: SimpleProject[] = [
     description:
       "A MERN-based real estate application for securely listing, browsing, and connecting around property listings, with JWT authentication for account management.",
     tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
-    link: "https://github.com/PrashantAgrawal2107/MERN-Estate-App",
+    link: "https://mern-estate-app-pk.onrender.com",
   },
   {
-    name: "Blog App",
-    tag: "MERN Stack",
+    name: "E-Learning Platform",
+    tag: "Full-Stack · FastAPI",
     description:
-      "A MERN-based blogging platform for creating and managing posts, with public read access and protected content management.",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
-    link: "https://github.com/PrashantAgrawal2107/MERN-Blog-App",
+      "A full-stack e-learning platform with course/module management, an automated-scoring quiz system, enrollments, and progress tracking.",
+    tech: ["FastAPI", "PostgreSQL", "React", "JWT"],
+  },
+  {
+    name: "Checkmate",
+    tag: "Full-Stack · Java Spring Boot",
+    description:
+      "A full-stack platform for building and running checklists for recurring workflows like employee onboarding and offboarding. I worked on the backend in Java Spring Boot: RESTful APIs for checklist creation, task assignment, and role-based execution, with JPA/PostgreSQL modeling for teams, reminders, dependencies, and audit logging.",
+    tech: ["Java", "Spring Boot", "JPA", "PostgreSQL"],
   },
 ];
 
